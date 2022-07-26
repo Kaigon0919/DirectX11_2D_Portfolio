@@ -1,0 +1,391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6bf47199-ab76-4457-90c9-edaa2080512f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{15530909-632b-48ea-a3b6-7d396cd577db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{fadd298f-785b-44ee-a522-de24708b4f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{0a03aa36-3cc3-4f98-b5a5-644af1421b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window\Res">
+      <UniqueIdentifier>{74f7e665-4393-4180-acac-2e428c6c0ad5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Mgr">
+      <UniqueIdentifier>{6338b5b5-c729-4f66-8e7e-971f0174df47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render">
+      <UniqueIdentifier>{7f8d2c7a-cf1e-4eae-a1b3-c9f8fc76422c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Mesh">
+      <UniqueIdentifier>{20d91661-c1e7-4092-aa4e-a440575c04af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\CBuffer">
+      <UniqueIdentifier>{d51a11aa-6195-4309-b819-d50c2dd15143}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Shader">
+      <UniqueIdentifier>{861127bf-b5aa-417b-9159-72ed368a0e97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Shader\Sub">
+      <UniqueIdentifier>{e0e9477d-a622-4d6c-bf4d-328dbb94d845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{076dbcfc-59b8-4b46-a9ad-64c49d536ab9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Actor">
+      <UniqueIdentifier>{8fc66d30-4cc8-4d81-933b-716175cfcf4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Level">
+      <UniqueIdentifier>{8d83862a-2bf6-42e1-938d-b7a957668e73}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Component">
+      <UniqueIdentifier>{50dea5d3-4aa3-4c0d-b93f-296f00fc4149}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Component\Sub">
+      <UniqueIdentifier>{cde89c8b-3c57-458d-8e23-1edcf3cd5a3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Interface">
+      <UniqueIdentifier>{4eca2b71-564b-468f-89da-6028070126ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\Interface\Object">
+      <UniqueIdentifier>{5bf88fe4-6fa0-4e15-8f97-67d79f928f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Component\Sub\Render">
+      <UniqueIdentifier>{cf7f0328-2ad4-4c04-8ef7-e8e6e72a8d0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Component\Sub\Ani">
+      <UniqueIdentifier>{3d371c1f-5f3c-40b2-8dfc-fc6c6a4b42c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Sampler">
+      <UniqueIdentifier>{814a5d3d-cd95-4389-842a-0f572145d433}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Blend">
+      <UniqueIdentifier>{c4d457d2-643a-4ee7-92d7-4bac4de95a91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Collision">
+      <UniqueIdentifier>{a4dc47cc-1c91-451d-a5bf-dc624d7a6d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Component\Sub\Collision">
+      <UniqueIdentifier>{ef473e14-2d86-4aa4-8302-0f7b7dd1ca07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Render\Font">
+      <UniqueIdentifier>{0d22cb16-dba2-4db6-b8ea-526bc43774b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\FileStream">
+      <UniqueIdentifier>{f6962873-68ff-418b-8831-93a8fd0f517e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base\FileStream\Binary">
+      <UniqueIdentifier>{1f0e8bb5-94d7-4acd-ab24-cf6482759e25}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SystemCore.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MainWindow.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorData.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexData.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="STLHelper.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Window\Res</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>Base\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="UtillMacor.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Core\Render\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Core\Render\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="ResMgr.h">
+      <Filter>Window\Res</Filter>
+    </ClInclude>
+    <ClInclude Include="PixelShader.h">
+      <Filter>Core\Render\Shader\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="VertexShader.h">
+      <Filter>Core\Render\Shader\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="DXCBuffer.h">
+      <Filter>Core\Render\CBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMgr.h">
+      <Filter>Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>Object\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="IActor.h">
+      <Filter>Base\Interface\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ILevel.h">
+      <Filter>Base\Interface\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ILevelBase.h">
+      <Filter>Base\Interface\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Level.h">
+      <Filter>Object\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="IComponent.h">
+      <Filter>Base\Interface\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="IActorBase.h">
+      <Filter>Base\Interface\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Object\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.h">
+      <Filter>Object\Component\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="IName.h">
+      <Filter>Base\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IRefCount.h">
+      <Filter>Base\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ITypeInfoBase.h">
+      <Filter>Base\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IUpdate.h">
+      <Filter>Base\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="PJHUtill.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDevice.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Object\Component\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="ComScript.h">
+      <Filter>Object\Component\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>Base\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Base\Mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="ResMacro.h">
+      <Filter>Window\Res</Filter>
+    </ClInclude>
+    <ClInclude Include="Render2DSprite.h">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ComRender.h">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Com2DFrameAni.h">
+      <Filter>Object\Component\Sub\Ani</Filter>
+    </ClInclude>
+    <ClInclude Include="Tex.h">
+      <Filter>Core\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="DxSampler.h">
+      <Filter>Core\Render\Sampler</Filter>
+    </ClInclude>
+    <ClInclude Include="DxBlend.h">
+      <Filter>Core\Render\Blend</Filter>
+    </ClInclude>
+    <ClInclude Include="ColMgr.h">
+      <Filter>Core\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="ComCol.h">
+      <Filter>Object\Component\Sub\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="GameSprite.h">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Col2DRect.h">
+      <Filter>Object\Component\Sub\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="DXFont.h">
+      <Filter>Core\Render\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="DxDebug.h">
+      <Filter>Core\Render\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMath.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMapRender.h">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="SubTransform.h">
+      <Filter>Object\Component\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseFileStream.h">
+      <Filter>Base\FileStream</Filter>
+    </ClInclude>
+    <ClInclude Include="BRStream.h">
+      <Filter>Base\FileStream\Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="BWStream.h">
+      <Filter>Base\FileStream\Binary</Filter>
+    </ClInclude>
+    <ClInclude Include="MyThread.h" />
+    <ClInclude Include="MySound.h" />
+    <ClInclude Include="MySoundPlayer.h" />
+    <ClInclude Include="MyRandom.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderData.h" />
+    <ClInclude Include="RenderFillRect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SystemCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWindow.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorData.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource.cpp">
+      <Filter>Window\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>Base\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Core\Render\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Core\Render\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="ResMgr.cpp">
+      <Filter>Window\Res</Filter>
+    </ClCompile>
+    <ClCompile Include="PixelShader.cpp">
+      <Filter>Core\Render\Shader\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="VertexShader.cpp">
+      <Filter>Core\Render\Shader\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMgr.cpp">
+      <Filter>Core\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>Object\Actor</Filter>
+    </ClCompile>
+    <ClCompile Include="Level.cpp">
+      <Filter>Object\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Level_Management.cpp">
+      <Filter>Object\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Object\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cpp">
+      <Filter>Object\Component\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="IRefCount.cpp">
+      <Filter>Base\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="ITypeInfoBase.cpp">
+      <Filter>Base\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="DXCBuffer.cpp">
+      <Filter>Core\Render\CBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDevice_Default_ResInit.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDevice.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Object\Component\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="ComScript.cpp">
+      <Filter>Object\Component\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Base\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>Base\Mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="Render2DSprite.cpp">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="ComRender.cpp">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Com2DFrameAni.cpp">
+      <Filter>Object\Component\Sub\Ani</Filter>
+    </ClCompile>
+    <ClCompile Include="Tex.cpp">
+      <Filter>Core\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="DxSampler.cpp">
+      <Filter>Core\Render\Sampler</Filter>
+    </ClCompile>
+    <ClCompile Include="DxBlend.cpp">
+      <Filter>Core\Render\Blend</Filter>
+    </ClCompile>
+    <ClCompile Include="ColMgr.cpp">
+      <Filter>Core\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="ComCol.cpp">
+      <Filter>Object\Component\Sub\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="GameSprite.cpp">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Col2DRect.cpp">
+      <Filter>Object\Component\Sub\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="DxDebug.cpp">
+      <Filter>Core\Render\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="DXFont.cpp">
+      <Filter>Core\Render\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMath.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMapRender.cpp">
+      <Filter>Object\Component\Sub\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="SubTransform.cpp">
+      <Filter>Object\Component\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseFileStream.cpp">
+      <Filter>Base\FileStream</Filter>
+    </ClCompile>
+    <ClCompile Include="BRStream.cpp">
+      <Filter>Base\FileStream\Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="BWStream.cpp">
+      <Filter>Base\FileStream\Binary</Filter>
+    </ClCompile>
+    <ClCompile Include="MyThread.cpp" />
+    <ClCompile Include="MySound.cpp" />
+    <ClCompile Include="MySoundPlayer.cpp" />
+    <ClCompile Include="MyRandom.cpp" />
+    <ClCompile Include="RenderFillRect.cpp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Level">
+      <UniqueIdentifier>{c1450c8a-d60a-4b8f-88c7-5e9ebb009d15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\SeriaRoom">
+      <UniqueIdentifier>{b6177d1e-bde4-4500-ac24-dd9c6f04a02d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Global">
+      <UniqueIdentifier>{fa626ce2-d4f8-4f64-8862-2589ff226129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\SeriaRoom\Scripts">
+      <UniqueIdentifier>{892ba5d2-bb45-448a-8456-5024e3da52fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Village">
+      <UniqueIdentifier>{dcded645-30ce-4d6d-ab37-d1b199294972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Village\Scripts">
+      <UniqueIdentifier>{4d66faae-8eb7-493d-afa1-a4783d416f90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Tiltle">
+      <UniqueIdentifier>{3b23d1d9-5bc4-41ad-be35-78e30b731d44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Base">
+      <UniqueIdentifier>{0b03c5f8-b350-4faa-b772-386075b42661}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Global\Monster">
+      <UniqueIdentifier>{d04d34f0-1d39-49a6-bf60-533c9755d850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Global\Monster\Sub">
+      <UniqueIdentifier>{1d6378c3-da10-4b30-b2dd-6dac4fd4d205}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utill">
+      <UniqueIdentifier>{c727adb2-8f69-46b1-a66e-2677a5e4c599}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Level\Dungeon">
+      <UniqueIdentifier>{b847d785-2914-4f70-b842-31613a29777b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player.h">
+      <Filter>Level\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="BackGround.h">
+      <Filter>Level\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Hud.h">
+      <Filter>Level\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="SeriaRoom.h">
+      <Filter>Level\SeriaRoom</Filter>
+    </ClInclude>
+    <ClInclude Include="FirstCore.h" />
+    <ClInclude Include="Gate.h">
+      <Filter>Level\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Village.h">
+      <Filter>Level\Village</Filter>
+    </ClInclude>
+    <ClInclude Include="TilteLoading.h">
+      <Filter>Level\Tiltle</Filter>
+    </ClInclude>
+    <ClInclude Include="BattlePawn.h">
+      <Filter>Base</Filter>
+    </ClInclude>
+    <ClInclude Include="MonsterMgr.h">
+      <Filter>Level\Global\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Level\Global\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Goblin.h">
+      <Filter>Level\Global\Monster\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="Tau.h">
+      <Filter>Level\Global\Monster\Sub</Filter>
+    </ClInclude>
+    <ClInclude Include="Timehelper.h">
+      <Filter>Utill</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage1.h">
+      <Filter>Level\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage2.h">
+      <Filter>Level\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="StageBoss.h">
+      <Filter>Level\Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="DamageNumber.h" />
+    <ClInclude Include="Fade.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Player.cpp">
+      <Filter>Level\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Player_FSM.cpp">
+      <Filter>Level\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="BackGround.cpp">
+      <Filter>Level\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Hud.cpp">
+      <Filter>Level\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="SeriaRoom.cpp">
+      <Filter>Level\SeriaRoom</Filter>
+    </ClCompile>
+    <ClCompile Include="FirstCore.cpp" />
+    <ClCompile Include="Gate.cpp">
+      <Filter>Level\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Village.cpp">
+      <Filter>Level\Village</Filter>
+    </ClCompile>
+    <ClCompile Include="TilteLoading.cpp">
+      <Filter>Level\Tiltle</Filter>
+    </ClCompile>
+    <ClCompile Include="BattlePawn.cpp">
+      <Filter>Base</Filter>
+    </ClCompile>
+    <ClCompile Include="MonsterMgr.cpp">
+      <Filter>Level\Global\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Level\Global\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Goblin.cpp">
+      <Filter>Level\Global\Monster\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="Tau.cpp">
+      <Filter>Level\Global\Monster\Sub</Filter>
+    </ClCompile>
+    <ClCompile Include="Timehelper.cpp">
+      <Filter>Utill</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage1.cpp">
+      <Filter>Level\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage2.cpp">
+      <Filter>Level\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="StageBoss.cpp">
+      <Filter>Level\Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="DamageNumber.cpp" />
+    <ClCompile Include="Fade.cpp" />
+  </ItemGroup>
+</Project>

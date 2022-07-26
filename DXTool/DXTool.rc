@@ -1,0 +1,485 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#include ""res\\DXTool.rc2""  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.\r\n"
+    "#include ""l.KOR\\afxres.rc""      // 표준 구성 요소\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DXTool.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "끝내기(&X)",                     ID_APP_EXIT
+    END
+    POPUP "편집(&E)"
+    BEGIN
+        MENUITEM "실행 취소(&U)\tCtrl+Z",           ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "복사(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "붙여넣기(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "도움말(&H)"
+    BEGIN
+        MENUITEM "DXTool 정보(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007(파랑 스타일)(&B)",     ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007(검정 스타일)(&L)",     ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007(은색 스타일)(&S)",     ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007(바다색 스타일)(&A)",    ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "DXTool 정보"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "DXTool, 버전 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "확인",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_PropertyDlg DIALOGEX 0, 0, 310, 377
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PropertyTap,"SysTabControl32",TCS_FIXEDWIDTH,7,7,296,363
+END
+
+IDD_SpriteDlg DIALOGEX 0, 0, 305, 336
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_SpriteTree,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,118,156
+    PUSHBUTTON      "Load",IDC_LOAD,151,18,103,42
+END
+
+IDD_MapDlg DIALOGEX 0, 0, 273, 265
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "TileMode",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,14,15,44,10
+    CONTROL         "GateMode",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,72,15,49,10
+    CONTROL         "Object",IDC_RADIO5,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,135,15,37,10
+    LISTBOX         IDC_TileList,14,31,52,188,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_SAVE,149,191,107,24
+    PUSHBUTTON      "Load",IDC_LOAD,149,220,107,24
+    GROUPBOX        "GateSetting",IDC_STATIC,71,25,65,225
+    LTEXT           "Position",IDC_STATIC,78,61,26,8
+    LTEXT           "X",IDC_STATIC,79,72,8,8
+    LTEXT           "Y",IDC_STATIC,79,88,8,8
+    EDITTEXT        IDC_GATEPOSX,87,69,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GATEPOSY,87,85,40,14,ES_AUTOHSCROLL
+    CONTROL         "LevelGate",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,80,37,48,10
+    CONTROL         "PosGate",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | WS_TABSTOP,80,49,43,10
+    LTEXT           "Scale",IDC_STATIC,78,102,18,8
+    LTEXT           "X",IDC_STATIC,80,113,8,8
+    LTEXT           "Y",IDC_STATIC,80,129,8,8
+    EDITTEXT        IDC_GATESCALEX,88,110,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GATESCALEY,88,126,40,14,ES_AUTOHSCROLL
+    LTEXT           "NextLevel",IDC_STATIC,78,147,33,8
+    EDITTEXT        IDC_GATENEXTLEVEL,75,156,54,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SPRITENAME,149,171,106,14,ES_AUTOHSCROLL
+    LTEXT           "SpriteName",IDC_STATIC,151,161,38,8
+    LTEXT           "NextPos",IDC_STATIC,76,177,28,8
+    LTEXT           "X",IDC_STATIC,77,188,8,8
+    LTEXT           "Y",IDC_STATIC,77,204,8,8
+    EDITTEXT        IDC_GATENEXTPOSX,85,185,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GATENEXTPOSY,85,201,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Create",IDC_GATECREATE,78,216,50,14
+    PUSHBUTTON      "Delete",IDC_DELETE,78,231,50,14
+    GROUPBOX        "Object",IDC_STATIC,143,25,113,129
+    LISTBOX         IDC_OBJLIST,153,38,47,110,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_BUTTON1,203,38,48,23
+END
+
+IDD_AniDlg DIALOGEX 0, 0, 311, 293
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "AniList",IDC_STATIC,14,15,30,10
+    LISTBOX         IDC_ANILIST,12,27,83,250,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "AniName",IDC_ANILIST2,101,21,30,14
+    LTEXT           "StartFrame",IDC_ANILIST3,101,47,43,14
+    LTEXT           "EndFrame",IDC_ANILIST4,101,73,43,14
+    LTEXT           "DefFrameTime",IDC_ANILIST5,101,110,53,14
+    CONTROL         "Loop",IDC_LOOP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,97,31,14
+    EDITTEXT        IDC_ANINAME,101,31,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STARTFRAME,101,57,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ENDFRAME,101,83,59,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DEFTIME,101,120,59,14,ES_AUTOHSCROLL
+    LTEXT           "StartFrame",IDC_ESTARTSTATIC,167,20,42,14
+    EDITTEXT        IDC_ESTART,167,30,50,14,ES_AUTOHSCROLL
+    LTEXT           "EndFrame",IDC_EENDSTATIC,226,20,47,14
+    EDITTEXT        IDC_EEND,226,30,50,14,ES_AUTOHSCROLL
+    GROUPBOX        "Event",IDC_STATIC,164,10,115,213
+    LTEXT           "PosX",IDC_EPOSXSTATIC,167,51,30,14
+    EDITTEXT        IDC_EPOSX,167,61,50,14,ES_AUTOHSCROLL
+    LTEXT           "PosY",IDC_EPOSYSTATIC,226,51,30,14
+    EDITTEXT        IDC_EPOSY,226,61,50,14,ES_AUTOHSCROLL
+    LTEXT           "ScaleX",IDC_ANILIST10,167,82,30,14
+    EDITTEXT        IDC_SCALEX,167,92,50,14,ES_AUTOHSCROLL
+    LTEXT           "ScaleY",IDC_ANILIST11,226,82,30,14
+    EDITTEXT        IDC_ESCALEY,226,92,50,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ani Create",IDC_ANICREATE2,101,203,59,19
+    PUSHBUTTON      "Event Create",IDC_ECREATE,167,114,106,33
+    PUSHBUTTON      "Ani Delete",IDC_ANIDELETE,101,222,59,19
+    PUSHBUTTON      "Save",IDC_SAVE,167,232,59,31
+    PUSHBUTTON      "Load",IDC_LOAD,227,232,59,31
+    LISTBOX         IDC_LIST1,167,182,106,37,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Event Delete",IDC_EDELETE,167,148,106,33
+    PUSHBUTTON      "SpriteLoad",IDC_BUTTON1,101,241,59,19
+    PUSHBUTTON      "SubPosLoad",IDC_BUTTON2,101,260,59,19
+    EDITTEXT        IDC_PIVOTY,118,167,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PIVOTX,118,150,40,14,ES_AUTOHSCROLL
+    LTEXT           "Pivot",IDC_STATIC,102,140,17,8
+    LTEXT           "X",IDC_STATIC,109,152,8,8
+    LTEXT           "Y",IDC_STATIC,108,169,8,8
+    CONTROL         "ShowAxis",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,186,47,10
+    GROUPBOX        "",IDC_STATIC,99,135,63,63
+END
+
+IDD_MONDLG DIALOGEX 0, 0, 320, 200
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    LISTBOX         IDC_LIST1,14,17,74,137,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Save",IDC_SAVE,100,19,50,14
+    PUSHBUTTON      "Load",IDC_LOAD,100,37,50,14
+    PUSHBUTTON      "MapLoad",IDC_MAPLOAD,100,55,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <회사 이름>"
+            VALUE "FileDescription", "DXTool"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "DXTool.exe"
+            VALUE "LegalCopyright", "TODO: (c) <회사 이름>.  All rights reserved."
+            VALUE "OriginalFilename", "DXTool.exe"
+            VALUE "ProductName", "TODO: <제품 이름>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_PropertyDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 370
+    END
+
+    IDD_SpriteDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 298
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 329
+    END
+
+    IDD_MapDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 266
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_AniDlg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 286
+    END
+
+    IDD_MONDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_PropertyDlg AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 100, 100
+END
+
+IDD_SpriteDlg AFX_DIALOG_LAYOUT
+BEGIN
+    0,
+    0, 0, 0, 100,
+    0, 0, 0, 0
+END
+
+IDD_MapDlg AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_AniDlg AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MONDLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "DXTool"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "DXTool"
+    AFX_IDS_IDLEMESSAGE     "준비"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "프로그램 정보, 버전 번호 및 저작권을 표시합니다.\n정보"
+    ID_APP_EXIT             "문서를 저장할지를 묻고 응용 프로그램을 끝냅니다.\n끝내기"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "다음 창으로 전환합니다.\n다음 창"
+    ID_PREV_PANE            "이전 창으로 전환합니다.\n이전 창"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "활성 창을 여러 개의 창으로 분할합니다.\n분할"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "선택 영역을 지웁니다.\n지우기"
+    ID_EDIT_CLEAR_ALL       "모두 지웁니다.\n모두 지우기"
+    ID_EDIT_COPY            "선택 영역을 복사하여 클립보드에 넣습니다.\n복사"
+    ID_EDIT_CUT             "선택 영역을 잘라내어 클립보드에 넣습니다.\n잘라내기"
+    ID_EDIT_FIND            "지정한 텍스트를 찾습니다.\n찾기"
+    ID_EDIT_PASTE           "클립보드 내용을 삽입합니다.\n붙여넣기"
+    ID_EDIT_REPEAT          "마지막 작업을 반복합니다.\n반복"
+    ID_EDIT_REPLACE         "특정 텍스트를 다른 텍스트로 바꿉니다.\n바꾸기"
+    ID_EDIT_SELECT_ALL      "전체 문서를 선택합니다.\n모두 선택"
+    ID_EDIT_UNDO            "마지막 작업 실행을 취소합니다.\n실행 취소"
+    ID_EDIT_REDO            "이전에 실행 취소된 작업을 다시 실행합니다.\n다시 실행"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "창 크기를 변경합니다."
+    AFX_IDS_SCMOVE          "창 위치를 변경합니다."
+    AFX_IDS_SCMINIMIZE      "창을 아이콘으로 축소합니다."
+    AFX_IDS_SCMAXIMIZE      "창을 전체 화면 크기로 확대합니다."
+    AFX_IDS_SCNEXTWINDOW    "다음 문서 창으로 전환합니다."
+    AFX_IDS_SCPREVWINDOW    "이전 문서 창으로 전환합니다."
+    AFX_IDS_SCCLOSE         "문서를 저장할 것인지 확인하고 활성 창을 닫습니다."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "창을 보통 크기로 복원합니다."
+    AFX_IDS_SCTASKLIST      "작업 목록을 활성화합니다."
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE 18, 1
+#include "res\DXTool.rc2"  // Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스입니다.
+#include "l.KOR\afxres.rc"      // 표준 구성 요소
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

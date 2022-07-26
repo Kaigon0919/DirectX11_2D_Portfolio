@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Std">
+      <UniqueIdentifier>{3fe3e06b-91a2-41ce-962a-581e3fcc1ced}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="View">
+      <UniqueIdentifier>{3bd56b57-c4f6-4487-83d0-9df488ea0e34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dlg">
+      <UniqueIdentifier>{d1a6f5ed-a5d4-415f-8dd3-5c8a36b50b79}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Dlg\TabDlg">
+      <UniqueIdentifier>{b47593ea-11a3-44ac-b0fb-ad8e4368945c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{1ca3f145-354a-4cde-9d78-181c3efee088}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Level">
+      <UniqueIdentifier>{76420f87-4401-4843-9ad8-60396f0b0157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Com">
+      <UniqueIdentifier>{b92a08db-abe4-4da2-92a1-5bc75a1e7937}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ToolBuilder.h" />
+    <ClInclude Include="MainFrm.h">
+      <Filter>Std</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Std</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTool.h">
+      <Filter>Std</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Std</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Std</Filter>
+    </ClInclude>
+    <ClInclude Include="DXWndView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyView.h">
+      <Filter>View</Filter>
+    </ClInclude>
+    <ClInclude Include="TabDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyDlg.h">
+      <Filter>Dlg</Filter>
+    </ClInclude>
+    <ClInclude Include="AniDlg.h">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDlg.h">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteDlg.h">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MySplitter.h" />
+    <ClInclude Include="ToolBuildScript.h">
+      <Filter>Script</Filter>
+    </ClInclude>
+    <ClInclude Include="SpriteScript.h">
+      <Filter>Script\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="MapDlgScript.h">
+      <Filter>Script\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="AniScript.h">
+      <Filter>Script\Com</Filter>
+    </ClInclude>
+    <ClInclude Include="MonDlg.h">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClInclude>
+    <ClInclude Include="MonScript.h">
+      <Filter>Script\Level</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ToolBuilder.cpp" />
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Std</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Std</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTool.cpp">
+      <Filter>Std</Filter>
+    </ClCompile>
+    <ClCompile Include="DXWndView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyView.cpp">
+      <Filter>View</Filter>
+    </ClCompile>
+    <ClCompile Include="TabDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyDlg.cpp">
+      <Filter>Dlg</Filter>
+    </ClCompile>
+    <ClCompile Include="AniDlg.cpp">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDlg.cpp">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteDlg.cpp">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MySplitter.cpp" />
+    <ClCompile Include="ToolBuildScript.cpp">
+      <Filter>Script</Filter>
+    </ClCompile>
+    <ClCompile Include="SpriteScript.cpp">
+      <Filter>Script\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="MapDlgScript.cpp">
+      <Filter>Script\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="AniScript.cpp">
+      <Filter>Script\Com</Filter>
+    </ClCompile>
+    <ClCompile Include="MonDlg.cpp">
+      <Filter>Dlg\TabDlg</Filter>
+    </ClCompile>
+    <ClCompile Include="MonScript.cpp">
+      <Filter>Script\Level</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DXTool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DXTool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DXTool.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+</Project>
