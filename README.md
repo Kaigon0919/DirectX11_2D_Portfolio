@@ -2,6 +2,8 @@
 
 * DirectX 기반의 게임 엔진과 콘텐츠 제작 툴을 통합하여 자체 게임 제작 환경 구축
 
+##### 결과물 영상 링크 : 
+https://youtu.be/nDM13B-IOCM?si=EH0OkF2qz5OqxuEZ
 
 
 ##### 사용 라이브러리:
